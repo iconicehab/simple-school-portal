@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Our School</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Welcome To Our School</h1>
+  <p>Your Future Begins Here!</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+</nav>
+
+<section id="about">
+  <h2>About Our School</h2>
+  <p>Our School is a place where students grow, learn, and achieve excellence. Established in 1990, we  help every student reach their full potential.</p>
+  <p>We offer a wide range of programs in academics, sports, and the arts to foster well-rounded growth.</p>
+</section>
+
+<section id="events">
+  <h2>Upcoming Events</h2>
+  <ul>
+    <li><strong>Welcome Day:</strong> December 20 ,2023</li>
+    <li><strong>Science Fair:</strong> January 20, 2024</li>
+    <li><strong>Sports Day:</strong> February 10, 2024</li>
+    <li><strong>Parent-Teacher Meeting:</strong> March 5, 2024</li>
+    <li><strong> Graduation Party:</strong> May 1, 2024</li>
+  </ul>
+  <button id="addEventButton">Add Your Event</button>
+  <ul id="customEvents"></ul>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form id="contactForm" action="submit.php" method="POST">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="Age">Your Age:</label>
+    <input type="number" id="Age" name="Age" placeholder="Enter your Age" required>
+
+    <label for="stage">Your Stage:</label>
+    <input type="text" id="stage" name="stage" placeholder="Enter your Stage" required>
+
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+  <p id="response"></p>
+</section>
+
+
+<footer>
+  <p>&copy; 2024 Our School. All rights reserved.</p>
+</footer>
+
+<script src="Javascript.JS"></script>
+</body>
+</html>
